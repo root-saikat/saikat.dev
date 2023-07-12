@@ -227,6 +227,9 @@ nav ul a {
 .hero-text span i {
     transition: all .2s;
 }
+.hero-text span i:hover {
+    color: #147efb
+}
 
 .hero-img {
     -webkit-animation: morph 8s ease-in-out infinite;
