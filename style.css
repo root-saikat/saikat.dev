@@ -445,6 +445,10 @@ nav ul a {
     height: auto;
     width: 100%;
 }
+.projects-grid .pro__img img:hover{
+    transform: translateY(-70%);
+    transition: transform 10s ease-in-out 0s;
+}
 .projects-grid .pro__text {
     display: flex;
     flex-direction: column;
