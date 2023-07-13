@@ -1,20 +1,21 @@
 // mobile nav javaScript part 
 
-const micon = document.querySelector('.mobile-menu');
-const mnav = document.querySelector('.mobile-nav');
-const mxicon = document.querySelector('.fa-xmark');
-const mlink = document.querySelectorAll('.mnlink');
+let micon = document.querySelector('.mobile-menu');
+let mnav = document.querySelector('.mobile-nav');
+let mxicon = document.querySelector('.fa-xmark');
 
 micon.addEventListener('click', () =>{
     mnav.classList.add('open-menu');
-})
+});
 mxicon.addEventListener('click', () =>{
     mnav.classList.remove('open-menu');
-})
-mlink.addEventListener('click', () =>{
-    let closeMnav = document.querySelector('.mobile-nav');
-    closeMnav.classList.add('closed-menu');
-})
+});
+
+let am = document.querySelectorAll('.mnlink').forEach(element=>{
+    element.onclick = function(){
+        mnav.classList.remove('open-menu');
+    }
+});
 
 // mobile nav javaScript part ends
 
