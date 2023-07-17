@@ -640,6 +640,9 @@ img.web-firm {
     font-size: 1.7rem;
     text-decoration: none;
 }
+.contact__info a:hover, .contact__info p:hover {
+    color: #147efb;
+}
 /* contact css ends here */
 
 
