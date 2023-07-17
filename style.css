@@ -685,14 +685,18 @@ footer h3 {
 
 
 /* responsive css */
-@media (min-width: 1900px)
-.content {
+@media (min-width: 1900px){
+    .content {
     margin-top: 10rem;
+    }
 }
-@media (min-width: 1600px)
-.content {
+
+@media (min-width: 1600px){
+    .content {
     margin-top: 6rem;
+    }
 }
+
 @media (max-width: 1020px){
     .about {
         padding: 8rem 0px;
