@@ -100,6 +100,9 @@ nav ul a {
     text-decoration: none;
     transition: all .23s;
 }
+nav ul a:hover {
+    color: #147efb;
+}
 .mobile-menu {
     cursor: pointer;
     display: none;
