@@ -425,6 +425,7 @@ nav ul a:hover {
     border-radius: 1.7rem;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     display: flex;
+    display: none;
 }
 .projects-grid .pro:hover{
     box-shadow: 0 0 10px #2d2e32;
@@ -508,15 +509,25 @@ nav ul a:hover {
 .reversed-proj {
     flex-direction: row-reverse!important;
 }
-a.viewmore {
+.viewmore {
     /* width: fit-content; */
     margin: 50px auto;
     font-size: 2rem;
     /* padding:10px  20px; */
     color: #147efb;
     text-decoration: none;
+    cursor: pointer;
 }
-
+/* more projects */
+.projects-grid .pro:nth-child(1),
+.projects-grid .pro:nth-child(2),
+.projects-grid .pro:nth-child(3),
+.projects-grid .pro:nth-child(4),
+.projects-grid .pro:nth-child(5),
+.projects-grid .pro:nth-child(6)
+{
+    display: flex;
+}
 /* projects css ends */
 
 /* work experience */

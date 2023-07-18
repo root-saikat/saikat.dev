@@ -19,3 +19,18 @@ let am = document.querySelectorAll('.mnlink').forEach(element=>{
 
 // mobile nav javaScript part ends
 
+// show more projects
+let loadMoreBtn = document.querySelector('#loadmore');
+let currentItem = 6;
+
+loadMoreBtn.onclick =() =>{
+    let boxes =[...document.querySelectorAll('.projects-grid .pro')];
+    for(var i = currentItem;i < currentItem + 2; i++){
+        boxes[i].style.display = 'flex';
+    }
+    currentItem +=6;
+    if (currentItem >= boxes.length){
+        loadMoreBtn.style.display='none';
+    }
+};
+
