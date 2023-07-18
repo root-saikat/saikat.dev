@@ -16,6 +16,7 @@ mxicon.addEventListener('click', () =>{
 let am = document.querySelectorAll('.mnlink').forEach(element=>{
     element.onclick = function(){
         mnav.classList.remove('open-menu');
+        document.body.style.overflowY = 'scroll';
     }
 });
 
