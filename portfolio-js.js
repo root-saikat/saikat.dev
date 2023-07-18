@@ -6,9 +6,11 @@ let mxicon = document.querySelector('.fa-xmark');
 
 micon.addEventListener('click', () =>{
     mnav.classList.add('open-menu');
+    document.body.style.overflowY = 'hidden';
 });
 mxicon.addEventListener('click', () =>{
     mnav.classList.remove('open-menu');
+    document.body.style.overflowY = 'scroll';
 });
 
 let am = document.querySelectorAll('.mnlink').forEach(element=>{
