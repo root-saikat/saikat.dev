@@ -25,7 +25,7 @@ let currentItem = 6;
 
 loadMoreBtn.onclick =() =>{
     let boxes =[...document.querySelectorAll('.projects-grid .pro')];
-    for(var i = currentItem;i < currentItem + 2; i++){
+    for(var i = currentItem;i < currentItem + 3; i++){
         boxes[i].style.display = 'flex';
     }
     currentItem +=6;
