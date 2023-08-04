@@ -23,6 +23,7 @@ let am = document.querySelectorAll('.mnlink').forEach(element=>{
 let loadMoreBtn = document.querySelector('#loadmore');
 let currentItem = 6;
 
+
 loadMoreBtn.onclick =() =>{
     let boxes =[...document.querySelectorAll('.projects-grid .pro')];
     for(var i = currentItem;i < currentItem + 3; i++){
