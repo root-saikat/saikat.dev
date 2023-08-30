@@ -76,7 +76,7 @@ nav {
     height: auto;
     justify-content: space-between;
     left: 0;
-    padding: 25px 40px 25px 50px;
+    padding: 20px 40px 20px 50px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -92,6 +92,7 @@ nav ul {
     display: flex;
     gap: 2rem;
     list-style: none;
+    margin-bottom: 0;
 }
 
 nav ul a {
@@ -390,6 +391,12 @@ nav ul a:hover {
 /* about me css ends */
 
 /* projects css start */
+.nav-tabs{
+    justify-content: flex-end;
+}
+ul#myTab a {
+    font-size: 1.7rem;
+}
 .project {
     background-color: #f9f9f9;
     padding: 15rem 0;
@@ -419,6 +426,7 @@ nav ul a:hover {
     grid-template-rows: auto auto;
     height: auto;
     width: 100%;
+    margin-bottom: 50px;
 }
 .projects-grid .pro {
     background-color: #fff;
@@ -453,6 +461,18 @@ nav ul a:hover {
     transform: translateY(-70%);
     transition: transform 10s ease-in-out 0s;
 }
+
+.projects-grid .reactappimg img{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+.projects-grid .reactappimg img:hover{
+    transform: none;
+    transition: transform 10s ease-in-out 0s;
+}
+
+
 .projects-grid .pro__text {
     display: flex;
     flex-direction: column;
@@ -746,6 +766,9 @@ footer h3 {
         width: -webkit-fit-content;
         width: fit-content;
     }
+    .projects-grid .pro-react{
+        height: 65rem;
+    }
     .projects-grid .pro__text {
         margin: 0 auto;
     }
@@ -851,6 +874,9 @@ footer h3 {
         display: flex;
         flex-direction: column;
         margin-top: 0;
+    }
+    .projects-grid .pro-react{
+        height: 52rem;
     }
 
 }
