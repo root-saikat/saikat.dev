@@ -512,10 +512,13 @@ ul#myTab a {
 }
 .stack {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
     justify-content: center;
     margin-top: 1rem;
 }
+
+.stack > * + * { margin-left: 1rem;}
+
 .stack p {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
@@ -537,9 +540,12 @@ ul#myTab a {
     color: #2d2e32;
     font-size: 1.7rem;
     font-weight: 500;
-    gap: 5px;
+    /* gap: 5px; */
     text-decoration: none;
 }
+
+.links a  > * { margin-left: 5px;}
+
 .links a:hover{
     color: #147efb;
 }
