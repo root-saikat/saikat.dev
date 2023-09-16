@@ -226,9 +226,12 @@ nav ul a:hover {
 .hero-text span {
     cursor: pointer;
     display: flex;
-    gap: 1.3rem;
+    /* gap: 1.3rem; */
     margin: 2.5rem 0;
 }
+
+.hero-text span > * + * { margin-left: 1.3rem;}
+
 .hero-text span a {
     color: #2d2e32;
     font-size: 3rem;
@@ -302,9 +305,12 @@ nav ul a:hover {
 .skills ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    /* gap: 2.5rem; */
     list-style: none;
 }
+
+.skills ul > * + * { margin-left: 2.5rem;}
+
 .skills ul li {
     align-items: center;
     background-color: #fff;
@@ -446,10 +452,13 @@ ul#myTab a {
 
 .projects-grid .pro__1 {
     flex-direction: row;
-    gap: 8rem;
+    /* gap: 8rem; */
     height: 40rem;
     padding: 2rem;
 }
+
+.projects-grid .pro__1 > * + * { margin-left: 8rem;}
+
 .projects-grid .pro__img {
     background-color: hsla(0,0%,46%,.2);
     border-radius: 1.7rem;
@@ -538,6 +547,9 @@ ul#myTab a {
 .reversed-proj {
     flex-direction: row-reverse!important;
 }
+
+.reversed-proj > * + * { margin-right: 8rem;}
+
 .viewmore {
     /* width: fit-content; */
     margin: 50px auto;
@@ -650,9 +662,12 @@ img.web-firm {
 .contact__icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 8rem;
+    /* gap: 8rem; */
     margin-top: 6rem;
 }
+
+.contact__icons > * + * { margin-left: 8rem;}
+
 .contact__icon-box {
     align-items: center;
     display: flex;
@@ -673,6 +688,9 @@ img.web-firm {
     flex-direction: column;
     gap: 0.5rem;
 }
+
+.contact__info > * + * { margin-top: 0.5rem;}
+
 .contact__info h3 {
     color: #2d2e32;
     font-size: 1.7rem;
@@ -706,8 +724,11 @@ footer h3 {
 }
 .footerc__socials {
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
+
+.footerc__socials  > * + * { margin-left: 2rem;}
+
 .footerc__socials i {
     color: #fff;
     font-size: 2.3rem;
