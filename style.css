@@ -877,6 +877,7 @@ footer h3 {
     .contact__icon-box {
         flex-direction: column;
     }
+    .contact__icons > * + * { margin-left: 0rem;}
     .footerc {
         flex-wrap: wrap;
         gap: 2rem;
