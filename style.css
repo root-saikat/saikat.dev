@@ -90,9 +90,14 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
     list-style: none;
     margin-bottom: 0;
+}
+
+/* for safari */
+nav ul > * + * {
+     margin-left: 2rem;
 }
 
 nav ul a {
